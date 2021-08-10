@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Main Page</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Style+Script&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<div class="container1">
+		<div class="box">
+			<img src="LOGO.JPG" width="200" height="100">
+			
+			<div class="heading">
+					<h1>SAFAL TRADERS </h1>
+			</div>
+			
+			<div class="navigation">
+				<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="product.html">Products Collection</a></li>
+					<li><a href="newarrivals.html">New Arrivals</a></li>
+					
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				</nav>
+
+			</div>
+
+		</div>
+		<div id="banner1">
+
+					<div class="slideshow-container">
+
+  		<!-- Full-width images with number and caption text -->
+  		<div class="mySlides fade">
+    	<img src="bg1.jpg"  alt="wallpaper1" width="1140px" height="900px">
+  		</div>
+		</div>
+	
+		
+
+		
+		
+		
+
+				
+		<div class="choose">
+			<h1>Why choose us</h1>
+			<div>
+				<ol>
+					<li><h2>Outstanding products at competitive prices</h2>
+						<p>we never compromise on quality<p></li>
+						<br><br>
+					<li>	<h2>FREE HOME DELEVERY IN VALLEY</h2>
+						<p>OUT OF VALLEY ORDERS ARE ALSO ENTERTAINED<p></li>
+						<br><br>
+						<li>	<h2>PLUMBERS AVAILABLE </h2>
+						<p>EXPERIENCED PLUMBERS ARE AVAILABLE <p></li>
+						<br><br>
+					<li><h2>Friendly, helpful and professional service</h2>
+						<p>capability, flexibility and unwavering attention to detail.<p>
+							</li>
+				</ol>		<a name="sale"></a>
+
+					
+
+				<footer id="footer">
+					<div class="title">
+						<h3>Visit Shop Today</h3>
+						<hr>
+					</div>
+					<div class="time">
+						<h2>Opening hours</h2>
+						<p>Monday to Friday - 9am to 9pm</p>
+						<p>saturday and sunday - 8am to 10pm</p>
+						<h2>Address:</h2>
+						<p>GHORAHI , DANG</p>
+					</div>
+
+					<div class="touch">
+						<h2>Get In Touch</h2>
+						<p>SAPHAL2057@GMAIL.COM</p>
+						<p>082-560955</p>
+						<h2><a href = "mailto: SAPHAL2057@GMAIL.COM">Send Email</a></h2>
+					</div>
+					
+					
+				</footer> 
+
+
+
+		
+
+	</div>
+	</div>
+</div>
+		<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
